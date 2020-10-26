@@ -1,6 +1,7 @@
 package com.andreasgroup.jacksonjsonprocessbeerapplication.model;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -17,6 +18,7 @@ public class BaseTest {
                 .createdDate(OffsetDateTime.now())
                 .lastUpdatedDate(OffsetDateTime.now())
                 .price(new BigDecimal("19.89"))
+                .localDate(LocalDate.now())
                 .upc(1234645345L)
                 .build();
     }
