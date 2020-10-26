@@ -1,5 +1,6 @@
 package com.andreasgroup.jacksonjsonprocessbeerapplication.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,6 +22,8 @@ import java.util.UUID;
 @Builder
 public class BeerDto {
 
+    //JsonProperty override every json property naming strategy e.g. SNAKE_CASE, KEBAB_CASE
+    @JsonProperty("beerId")
     @Null
     private UUID id;
 
